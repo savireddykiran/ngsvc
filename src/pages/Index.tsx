@@ -1,12 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/hackathon/Navbar";
+import HeroSection from "@/components/hackathon/HeroSection";
+import ObjectiveSection from "@/components/hackathon/ObjectiveSection";
+import ChallengeSection from "@/components/hackathon/ChallengeSection";
+import UserStoriesSection from "@/components/hackathon/UserStoriesSection";
+import RankingSection from "@/components/hackathon/RankingSection";
+import TimelineSection from "@/components/hackathon/TimelineSection";
+import TechStackSection from "@/components/hackathon/TechStackSection";
+import SubmissionSection from "@/components/hackathon/SubmissionSection";
+import JudgingSection from "@/components/hackathon/JudgingSection";
+import ImportantNotesSection from "@/components/hackathon/ImportantNotesSection";
+import RegisterSection from "@/components/hackathon/RegisterSection";
+import Footer from "@/components/hackathon/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <HeroSection />
+      <ObjectiveSection />
+      <ChallengeSection />
+      <UserStoriesSection />
+      <RankingSection />
+      <TimelineSection />
+      <TechStackSection />
+      <SubmissionSection />
+      <JudgingSection />
+      <ImportantNotesSection />
+      <RegisterSection />
+      <Footer />
     </div>
   );
 };
