@@ -14,7 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      registrations: {
+        Row: {
+          anything_to_say: string | null
+          college_email: string | null
+          created_at: string
+          github_url: string | null
+          id: string
+          instagram_url: string | null
+          linkedin_url: string | null
+          name: string
+          other_social: string | null
+          personal_email: string
+          realtime_impact: string | null
+          tried_vibe_coding: boolean
+          vibe_coding_process: string | null
+          vibe_coding_projects: string | null
+        }
+        Insert: {
+          anything_to_say?: string | null
+          college_email?: string | null
+          created_at?: string
+          github_url?: string | null
+          id?: string
+          instagram_url?: string | null
+          linkedin_url?: string | null
+          name: string
+          other_social?: string | null
+          personal_email: string
+          realtime_impact?: string | null
+          tried_vibe_coding?: boolean
+          vibe_coding_process?: string | null
+          vibe_coding_projects?: string | null
+        }
+        Update: {
+          anything_to_say?: string | null
+          college_email?: string | null
+          created_at?: string
+          github_url?: string | null
+          id?: string
+          instagram_url?: string | null
+          linkedin_url?: string | null
+          name?: string
+          other_social?: string | null
+          personal_email?: string
+          realtime_impact?: string | null
+          tried_vibe_coding?: boolean
+          vibe_coding_process?: string | null
+          vibe_coding_projects?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

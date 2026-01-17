@@ -53,7 +53,7 @@ const HeroSection = () => {
             <p className="text-muted-foreground mb-4 text-sm uppercase tracking-wider">Starts In</p>
             <CountdownTimer />
             <p className="text-muted-foreground mt-4 text-sm">
-              18th Jan 2026 – 20th Jan 2026
+              20th Jan 2026 – 22nd Jan 2026
             </p>
           </div>
 

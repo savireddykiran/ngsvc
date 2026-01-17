@@ -3,7 +3,7 @@ import { Rocket, Code, Trophy } from "lucide-react";
 const timelineData = [
   {
     day: "Day 1",
-    date: "Jan 18, 2026",
+    date: "Jan 20, 2026",
     title: "Kickoff & Foundation",
     description: "Project initialization, team setup, architecture planning, and core development begins",
     icon: Rocket,
@@ -11,7 +11,7 @@ const timelineData = [
   },
   {
     day: "Day 2",
-    date: "Jan 19, 2026",
+    date: "Jan 21, 2026",
     title: "Core Development",
     description: "Build main features, implement AI integration, create feedback loops, and test functionality",
     icon: Code,
@@ -19,7 +19,7 @@ const timelineData = [
   },
   {
     day: "Day 3",
-    date: "Jan 20, 2026",
+    date: "Jan 22, 2026",
     title: "Polish & Submit",
     description: "Final testing, deployment, documentation, and submission of your project",
     icon: Trophy,
