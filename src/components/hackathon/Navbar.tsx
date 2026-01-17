@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Shield } from "lucide-react";
 
 const navLinks = [
   { name: "Overview", href: "#overview" },
@@ -8,11 +9,13 @@ const navLinks = [
   { name: "User Stories", href: "#user-stories" },
   { name: "Requirements", href: "#requirements" },
   { name: "Submission", href: "#submission" },
+  { name: "FAQ", href: "#faq" },
 ];
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,13 +62,22 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center gap-3">
             <Button
               onClick={() => scrollToSection("#register")}
               className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary"
             >
               Register Now
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => navigate("/admin")}
+              className="text-muted-foreground hover:text-primary"
+              title="Admin Login"
+            >
+              <Shield className="w-5 h-5" />
             </Button>
           </div>
 
@@ -96,6 +108,17 @@ const Navbar = () => {
                 className="bg-primary text-primary-foreground hover:bg-primary/90 mt-2"
               >
                 Register Now
+              </Button>
+              <Button
+                variant="outline"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  navigate("/admin");
+                }}
+                className="mt-2"
+              >
+                <Shield className="w-4 h-4 mr-2" />
+                Admin Login
               </Button>
             </div>
           </div>

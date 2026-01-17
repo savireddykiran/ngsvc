@@ -9,6 +9,7 @@ import TechStackSection from "@/components/hackathon/TechStackSection";
 import SubmissionSection from "@/components/hackathon/SubmissionSection";
 import JudgingSection from "@/components/hackathon/JudgingSection";
 import ImportantNotesSection from "@/components/hackathon/ImportantNotesSection";
+import FAQSection from "@/components/hackathon/FAQSection";
 import RegisterSection from "@/components/hackathon/RegisterSection";
 import Footer from "@/components/hackathon/Footer";
 
@@ -26,6 +27,7 @@ const Index = () => {
       <SubmissionSection />
       <JudgingSection />
       <ImportantNotesSection />
+      <FAQSection />
       <RegisterSection />
       <Footer />
     </div>
